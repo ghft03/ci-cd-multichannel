@@ -1,6 +1,9 @@
 name: CI/CD Multi-Channel
 
 on:
+  push:
+    paths:
+      - 'trigger-web.txt'    
   pull_request:
     branches: [ main ]
 
